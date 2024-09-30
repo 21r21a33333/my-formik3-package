@@ -11,8 +11,12 @@ import TextAreaField from "./components/formElements/TextAreaField";
 import TextField from "./components/formElements/TextElementField";
 import MyForm from "./components/Myform";
 import { FormContext, FormProvider } from "./components/contexts/FormProvider";
-
+import PasswordConfirmation from "./components/formElements/ConfirmPassword";
+import ToggleButton from "./components/formElements/ToggleButton";
+// import CheckboxList from "./components/formElements/CheckList";
+import SingleCheckboxList from "./components/formElements/CheckList";
 export {
+  PasswordConfirmation,
   DatePickerField,
   DropDownField,
   EmailField,
@@ -25,4 +29,6 @@ export {
   MyForm,
   FormContext,
   FormProvider,
+  ToggleButton,
+  SingleCheckboxList,
 };

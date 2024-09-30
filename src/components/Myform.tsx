@@ -31,17 +31,12 @@ const MyForm: React.FC<MyFormProps> = ({
   return (
     <form
       className={
-        `w-70vw mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8` +
-        " " +
-        className
+       `mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 ${className}`
       }
       onSubmit={onFormSubmit}
       style={styles}
+      // style={{ width: "100%" }}
     >
-      <b>asdfasdfksjdfkasdfhakjs</b>
-      <hr />
-      <hr />
-      <hr />
       <h1 className="text-center text-2xl font-bold text-blue-600 sm:text-3xl">
         {formtitle}
       </h1>

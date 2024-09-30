@@ -66,7 +66,7 @@ const SliderField: React.FC<SliderFieldProps> = ({
     }
     // Set initial value
     handleChange(name, initialValue.toString());
-  }, [name, initialValue]);
+  }, [name]);
 
   // Ensure values are numbers
   const value = Number(formData[name]) || initialValue; // Convert to number

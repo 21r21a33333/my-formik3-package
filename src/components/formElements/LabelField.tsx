@@ -17,10 +17,7 @@ const Label: React.FC<LabelProps> = ({
 }) => {
   return (
     <div style={styles} className={`flex items-center m-1 ${className}`}>
-      <label
-        htmlFor={For}
-        className="tracking-normal text-gray-700 md:text-lg dark:text-gray-400"
-      >
+      <label htmlFor={For} className="block text-gray-700 text-sm font-bold ">
         {text}
       </label>
       {isRequired && <span className="text-red-500 mr-1 ml-1">*</span>}

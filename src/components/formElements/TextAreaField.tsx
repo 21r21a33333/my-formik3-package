@@ -70,7 +70,7 @@ const TextAreaField: React.FC<TextAreaFieldProps> = ({
       />
       <div className="min-h-4">
         {formData[`${name}_error`] && (
-          <div className=" absolute bottom-2 text-red-500 text-sm mt-1">
+          <div className=" absolute  text-red-500 text-sm mt-1">
             {formData[`${name}_error`]}
           </div>
         )}

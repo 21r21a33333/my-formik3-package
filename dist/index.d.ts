@@ -9,13 +9,13 @@ interface DatePickerFieldProps {
 }
 declare const DatePickerField: React$1.FC<DatePickerFieldProps>;
 
-interface Option {
+interface Option$1 {
     label: string;
     value: string;
 }
 interface DropdownProps {
     name: string;
-    options: Option[];
+    options: Option$1[];
     placeholder?: string;
     isRequired?: boolean;
     styles?: React.CSSProperties;
@@ -94,11 +94,11 @@ declare const TextField: React$1.FC<TextFieldProps>;
 interface MyFormProps {
     children?: React$1.ReactNode;
     onSubmit: (data: Record<string, string>) => void;
-    buttonClasses: string;
-    buttonStyles: React$1.CSSProperties;
+    buttonClasses?: string;
+    buttonStyles?: React$1.CSSProperties;
     styles?: React$1.CSSProperties;
     className?: string;
-    formtitle: string;
+    formtitle?: string;
 }
 declare const MyForm: React$1.FC<MyFormProps>;
 
@@ -116,4 +116,38 @@ interface FormProviderProps {
 }
 declare const FormProvider: React$1.FC<FormProviderProps>;
 
-export { DatePickerField, DropDownField, EmailField, FormContext, FormProvider, Label, MyForm, NumberInputField, PhoneNumberField, SliderField, TextAreaField, TextField };
+interface PasswordConfirmationProps {
+    isRequired?: boolean;
+    styles?: React.CSSProperties;
+    className?: string;
+    placeholder?: string;
+    name: string;
+    minLetters?: number;
+    totalLength?: number;
+    minSpecialChars?: number;
+    minCapitalLetters?: number;
+    passwordinputStyles?: React.CSSProperties;
+    passwordinputClassName?: string;
+}
+
+declare const PasswordConfirmation: React$1.FC<PasswordConfirmationProps>;
+
+interface ToggleButtonProps {
+    name: string;
+    label: string;
+}
+declare const ToggleButton: React$1.FC<ToggleButtonProps>;
+
+interface Option {
+    label: string;
+    value: string;
+}
+interface SingleCheckboxListProps {
+    options: Option[];
+    name: string;
+    className?: string;
+    optionstyles?: React$1.CSSProperties;
+}
+declare const SingleCheckboxList: React$1.FC<SingleCheckboxListProps>;
+
+export { DatePickerField, DropDownField, EmailField, FormContext, FormProvider, Label, MyForm, NumberInputField, PasswordConfirmation, PhoneNumberField, SingleCheckboxList, SliderField, TextAreaField, TextField, ToggleButton };
